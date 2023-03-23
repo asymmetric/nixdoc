@@ -20,7 +20,7 @@
         };
 
         devShells.default = pkgs.mkShell {
-          buildInputs = with pkgs; [ cargo rustfmt ];
+          buildInputs = with pkgs; [ cargo clippy rustfmt ];
         };
       });
 }
